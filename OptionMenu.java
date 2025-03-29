@@ -47,7 +47,7 @@ public class OptionMenu extends Account{
 	
 	public void getAccountType() {
 		System.out.println("Select the account you want to access");
-		System.out.println("Type 1 - Checking Account");
+		System.out.println("Type 1 - Current Account");
 		System.out.println("Type 2 - Saving Account");
 		System.out.println("Type 3 - Exit");
 		System.out.println("Choice: ");
@@ -126,7 +126,7 @@ public class OptionMenu extends Account{
 		
 		switch(selection) {
 		case 1:
-			System.out.println("Checking account Balance: " + moneyFormat.format(getSavingBalance()));
+			System.out.println("Saving account Balance: " + moneyFormat.format(getSavingBalance()));
 			getAccountType();
 			break;
 			
