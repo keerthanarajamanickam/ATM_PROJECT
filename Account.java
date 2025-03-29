@@ -82,7 +82,7 @@ public class Account {
 		
 		if((currentBalance - amount) >= 0) {
 			calcCurrentWithdraw(amount);
-			System.out.println("New Checking Account Balance: " + moneyFormat.format(currentBalance));
+			System.out.println("New Current Account Balance: " + moneyFormat.format(currentBalance));
 		}
 		else {
 			System.out.println("Balance cannot be negative." + "\n");
@@ -115,7 +115,7 @@ public class Account {
 			
 			if((currentBalance + amount) >= 0) {
 				calcCurrentDeposit(amount);
-				System.out.println("New Checking Account Balance: " + moneyFormat.format(currentBalance));
+				System.out.println("New Current Account Balance: " + moneyFormat.format(currentBalance));
 			}
 			else {
 				System.out.println("Balance cannot be negative." + "\n");
