@@ -48,7 +48,7 @@ public class OptionMenu extends Account{
 	public void getAccountType() {
 		System.out.println("Select the account you want to access");
 		System.out.println("Type 1 - Current Account");
-		System.out.println("Type 2 - Saving Account");
+		System.out.println("Type 2 - Savings Account");
 		System.out.println("Type 3 - Exit");
 		System.out.println("Choice: ");
 		
@@ -112,10 +112,10 @@ public class OptionMenu extends Account{
 			}
 	}
 	
-	/* DISPLAY SAVING ACCOUNT MENU WITH SELECTION */
+	/* DISPLAY SAVINGS ACCOUNT MENU WITH SELECTION */
 	
 	public void getSaving() {
-		System.out.println("Saving Account: ");
+		System.out.println("Savings Account: ");
 		System.out.println("Type 1 - View Balance");
 		System.out.println("Type 2 - Withdraw Funds");
 		System.out.println("Type 3 - Deposit Funds");
@@ -126,7 +126,7 @@ public class OptionMenu extends Account{
 		
 		switch(selection) {
 		case 1:
-			System.out.println("Saving account Balance: " + moneyFormat.format(getSavingBalance()));
+			System.out.println("Savings account Balance: " + moneyFormat.format(getSavingBalance()));
 			getAccountType();
 			break;
 			
