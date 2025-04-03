@@ -3,7 +3,7 @@ package ATMProject;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.*;
-import java.util.Map.Entry;
+
 
 public class OptionMenu extends Account{
 	
@@ -40,6 +40,7 @@ public class OptionMenu extends Account{
 			        } else {
 			           System.out.println("\nWrong Customer Number or Pin Number.\n");
 			        }
+		     x++;
 		   }while(x ==1);
 	}
 	
