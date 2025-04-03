@@ -35,17 +35,18 @@ public class OptionMenu extends Account{
 					System.out.println("\n" + "Invalid character(s). Only numbers." + "\n");
 					x=2;
 				}
-			    for(Entry<Integer, Integer> entry : data.entrySet()) {
-				if(entry.getKey() == getCustomerNumber() && entry.getValue() == getPinNumber())
-					getAccountType();
-			     }
-			      System.out.println("\n" + "Wrong Customer Number or Pin Number." + "\n");
+			        if (data.containsKey(getCustomerNumber()) && data.get(getCustomerNumber()).equals(getPinNumber())) {
+			           getAccountType();
+			        } else {
+			           System.out.println("\nWrong Customer Number or Pin Number.\n");
+			        }
 		   }while(x ==1);
 	}
 	
 	/* DISPLAY ACCOUNT TYPE MENU WITH SELECTION */
 	
 	public void getAccountType() {
+		System.out.println();
 		System.out.println("Select the account you want to access");
 		System.out.println("Type 1 - Current Account");
 		System.out.println("Type 2 - Savings Account");
