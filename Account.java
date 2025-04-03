@@ -39,7 +39,7 @@ public class Account {
 		return currentBalance;
 	}
 	
-	/*Get saving account balance */
+	/*Get savings account balance */
 	
 	public double getSavingBalance() {
 		return savingBalance;
@@ -52,7 +52,7 @@ public class Account {
 		return currentBalance;
 	}
 	
-	/* calculate saving account withdrawal */
+	/* calculate savings account withdrawal */
 	
 	public double calcSavingWithdraw(double amount) {
 		savingBalance=(savingBalance - amount);
@@ -66,7 +66,7 @@ public class Account {
 		return currentBalance;
 	}
 	
-/*calculate saving account deposit */
+/*calculate savings account deposit */
 	
 	public double calcSavingDeposit(double amount) {
 		savingBalance=(savingBalance + amount);
@@ -89,16 +89,16 @@ public class Account {
 		}
 	}
 	
-	/* Customer Saving Account Withdraw Input */
+	/* Customer Savings Account Withdraw Input */
 	
 	public void getSavingWithdrawInput() {
-		System.out.println("Saving Account Balance: " + moneyFormat.format(savingBalance));
-		System.out.println("Amount you want to withdraw from Saving Account: ");
+		System.out.println("Savings Account Balance: " + moneyFormat.format(savingBalance));
+		System.out.println("Amount you want to withdraw from Savings Account: ");
 		double amount=input.nextDouble();
 		
 		if((savingBalance - amount) >= 0) {
 			calcSavingWithdraw(amount);
-			System.out.println("New Saving Account Balance: " + savingBalance + "\n");
+			System.out.println("New Savings Account Balance: " + savingBalance + "\n");
 		}
 		else {
 			System.out.println("Balance cannot be negative." + "\n");
@@ -123,16 +123,16 @@ public class Account {
 		}
 			
 			
-			/* Customer Saving account deposit input */
+			/* Customer Savings account deposit input */
 			
 			public void getSavingDepositInput() {
-				System.out.println("Saving Account Balance: " + moneyFormat.format(savingBalance));
-				System.out.println("Amount you want to withdraw from Saving Account: ");
+				System.out.println("Savings Account Balance: " + moneyFormat.format(savingBalance));
+				System.out.println("Amount you want to withdraw from Savings Account: ");
 				double amount=input.nextDouble();
 				
 				if((savingBalance + amount) >= 0) {
 					calcSavingDeposit(amount);
-					System.out.println("New Saving Account Balance: " + savingBalance + "\n");
+					System.out.println("New Savings Account Balance: " + savingBalance + "\n");
 				}
 				else {
 					System.out.println("Balance cannot be negative." + "\n");
