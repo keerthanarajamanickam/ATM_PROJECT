@@ -110,7 +110,7 @@ public class Account {
 		
 		public void getCurrentDepositInput() {
 			System.out.println("Current Account Balance: " + moneyFormat.format(currentBalance));
-			System.out.println("Amount you want to deposit from Current Account: ");
+			System.out.println("Amount you want to deposit to the Current Account: ");
 			double amount=input.nextDouble();
 			
 			if((currentBalance + amount) >= 0) {
@@ -127,7 +127,7 @@ public class Account {
 			
 			public void getSavingDepositInput() {
 				System.out.println("Savings Account Balance: " + moneyFormat.format(savingBalance));
-				System.out.println("Amount you want to withdraw from Savings Account: ");
+				System.out.println("Amount you want to deposit to the Savings Account: ");
 				double amount=input.nextDouble();
 				
 				if((savingBalance + amount) >= 0) {
